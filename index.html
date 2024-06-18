@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="./style/anijs.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -29,9 +31,9 @@
                     </div>
                     <div class="hidden lg:flex lg:gap-x-12">
                         <a href="#" class="text-sm font-semibold leading-6 texth">Inicio</a>
-                        <a href="#" class="text-sm font-semibold leading-6 texth">Features</a>
-                        <a href="#" class="text-sm font-semibold leading-6 texth">Marketplace</a>
-                        <a href="#" class="text-sm font-semibold leading-6 texth">Company</a>
+                        <a href="#" class="text-sm font-semibold leading-6 texth">Proyectos</a>
+                        <a href="#" class="text-sm font-semibold leading-6 texth">Contactame</a>
+
                     </div>
 
                 </nav>
@@ -39,8 +41,8 @@
                 <div class="lg:hidden" role="dialog" aria-modal="true">
                     <!-- Background backdrop, show/hide based on slide-over state. -->
 
-                    <div class=" hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-                        id="menu">
+                    <div class=" hidden fixed inset-y-0 right-0 z-50 w-full bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 
+                    transition-transform ease-in-out duration-300 transform translate-x-full" id="menu">
                         <div class="flex items-center justify-between">
                             <a href="#" class="-m-1.5 p-1.5">
                                 <span class="sr-only">Your Company</span>
@@ -72,6 +74,7 @@
                         </div>
                     </div>
                 </div>
+
             </header>
 
 
@@ -97,6 +100,22 @@
                                 aria-hidden="true">→</span></a>
                     </div>
                 </div>
+                <ul class="wrapper" id="red">
+                    <li class="icon wapp">
+                        <span class="tooltip">2804198600</span>
+                        <span><i class="fab fa-wapp-f"></i><a href=""><img src="./img/icons8-whatsapp-48.png"
+                                    alt=""></a></span>
+                    </li>
+                    <li class="icon github">
+                        <span class="tooltip">Github</span>
+                        <span><i class="fab fa-github"></i><a href=""><img src="./img/icons8-github-48.png"
+                                    alt=""></a></span>
+                    </li>
+                    <li class="icon linkedin">
+                        <span class="tooltip">Linkedin</span>
+                        <span><i class="fab fa-linkedin"></i><a href=""><img src="./img/iconlink.png" alt=""></a></span>
+                    </li>
+                </ul>
             </div>
             <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
                 aria-hidden="true">
@@ -142,21 +161,353 @@
 
         </div>
 
-        <div class="flex items-center my-5 mt-50">
+        <div class="flex items-center my-5 mt-0 linea">
             <div class="flex-grow border-t border-gray-300"></div>
             <span class="px-4 text-gray-500 text-2xl sm:text-4xl">PROYECTOS</span>
             <div class="flex-grow border-t border-gray-300"></div>
         </div>
+
+        <div class="flex flex-wrap justify-center">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/logo.jpeg" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Cuki Nails CBA (Sitio web)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Sitio web creado para cliente.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/ravio.jpg" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">El Raviolito (Sitio web)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Contribución de sitio web.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/imc.jpg" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Indice de <br> masa corporal (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Aplicación que calcula <br> la masa corporal de una persona.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/calc.png" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Calculadora (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Aplicación que suma, resta, <br> divide y multiplica <br> numeros ingresados.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/sesion_kinesiologia.jpg" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Galenos (Sitio web)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Sitio web destinado a cliente.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/salud.jpg" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Calculadora medica (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Calculadora de analisis medico.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/qiz.jpg" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Cuestionario (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Cuestionario de cultura general.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/meds.png" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Lista de <br> medicamentos (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Aplicación que permite llevar un <br> control de la <br> fecha en que se <br> compro un
+                        medicamento.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 tarjeta">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/data.png" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Manipulación <br> de datos (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Aplicación que muestra <br> datos del juego League of Legends.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-4  tarjeta ">
+                <div class="flex p-2 gap-1">
+                    <div class="">
+                        <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-yellow-500 inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
+                    </div>
+                </div>
+                <img class="w-full imgproyectos" src="./img/3s.png" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2  text-center">Calculadora regla <br>de tres simples (App)</div>
+                    <p class="text-gray-700 text-base text-center pdes">
+                        Cálculo de tres simples.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <button
+                        class=" bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <span
+                            class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                        Ir al proyecto
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="escri" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <img src="./img/escri.svg" alt="" class="imgescri">
+        </div>
+        <div class="flex items-center my-5 mt-0 linea">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="px-4 text-gray-500 text-2xl sm:text-4xl">CONTACTAME</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+        <div class="cnt" id="forms">
+            <div class="form-container">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <form class="form" action="https://formsubmit.co/emicampos1268@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="email">Tu email</label>
+                        <input required="" name="email" id="email" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Nombre</label>
+                        <input required="" name="nombre" id="text" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">Consultas</label>
+                        <textarea required="" cols="50" rows="10" id="textarea" name="textarea"
+                            name="consulta"></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://porfolio-emiliano-campos.netlify.app/">
+                    <button type="submit" class="css-button-arrow--blue">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+
     </main>
 
-    <footer>
+    <footer class="bg-gray-800 p-6 mt-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <p class="text-white">© 2024 EmilianoCampos. Todos los derechos reservados.</p>
 
+        </div>
     </footer>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="./script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="anijs-min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         AOS.init();
     </script>
