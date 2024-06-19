@@ -98,7 +98,7 @@ body {
 
     background-color: var(--negro);
     color: var(--rosa);
-
+    border-radius: 20px;
 }
 
 .pdes {
